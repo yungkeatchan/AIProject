@@ -112,6 +112,8 @@ public class HamSpam {
 				else
 					wrong++;
 			}
+			probSpam = 0;
+			probHam = 0;
 		}
 
 		// close the scanner to prevent leakage
