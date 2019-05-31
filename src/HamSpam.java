@@ -39,9 +39,9 @@ public class HamSpam {
 				}
 				while (scan.hasNext()) {
 					String word = scan.next();
-//					if (word.trim().length() <= 1) {
-//						continue;
-//					}
+					if (word.trim().length() <= 1) {
+						continue;
+					}
 					if (file.getName().startsWith("spmsg")) {
 
 						if (spamWords.contains(word)) {
@@ -74,8 +74,6 @@ public class HamSpam {
 				}
 			}
 		}
-		
-		System.out.println(allWords.size());
 
 		// test the files from test set
 		// add 1 to the numerator to avoid getting log 0
